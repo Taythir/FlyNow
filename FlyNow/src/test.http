@@ -1,0 +1,22 @@
+POST http://127.0.0.1:8000/users
+Content-Type: application/json
+
+{
+  "id": "myid",
+  "password": "abcd1234512",
+  "name": "John",
+  "gender": "M",
+  "age": 25,
+  "email": "123u@sample.com",
+  "phone": "512-1234-5678"
+}
+####
+POST http://127.0.0.1:8000/login
+Content-Type: application/json
+
+{
+  "id": "myid122",
+  "password": "abcd1234512"
+}
+###
+GET http://127.0.0.1:8000/flight_schedule?origin=Austin&destination=Dallas&depart_date=11-02-2025&arrival_date=11-03-2025
